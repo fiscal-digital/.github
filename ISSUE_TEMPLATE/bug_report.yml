@@ -1,0 +1,99 @@
+name: "Bug report / Reporte de bug"
+description: "Reporte um comportamento inesperado em algum repositório `fiscal-digital-*`. / Report unexpected behavior in any `fiscal-digital-*` repository."
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado por reportar. Por favor, preencha os campos abaixo com o máximo de detalhe possível — quanto mais factual, mais rápido conseguimos reproduzir e corrigir.
+
+        Thanks for reporting. Please fill in the fields below with as much factual detail as possible — the more reproducible, the faster we can ship a fix.
+
+        > Para vulnerabilidades de segurança, **não use este template** — siga [`SECURITY.md`](https://github.com/fiscal-digital/.github/blob/main/SECURITY.md).
+        > For security vulnerabilities, **do not use this template** — follow `SECURITY.md`.
+
+  - type: dropdown
+    id: repo
+    attributes:
+      label: "Repositório afetado / Affected repository"
+      description: "Qual repositório apresenta o problema? / Which repo is affected?"
+      options:
+        - "fiscal-digital (engine + Terraform)"
+        - "fiscal-digital-web (site + brand pack)"
+        - "fiscal-digital-collectors (coletores de fontes)"
+        - "fiscal-digital-analytics (notebooks e exports)"
+        - ".github (este repositório / this repo)"
+        - "Outro / Other (descrever abaixo)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: "Descrição / Description"
+      description: "O que aconteceu? Seja específico. / What happened? Be specific."
+      placeholder: "Ex.: ao rodar `npm run build` em fiscal-digital-web, o passo de geração estática falha com..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: "Passos para reproduzir / Steps to reproduce"
+      description: "Lista numerada. Quem chega aqui depois precisa conseguir reproduzir o bug seguindo os passos. / Numbered list. Someone landing here later should be able to reproduce."
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: "Comportamento esperado / Expected behavior"
+      description: "O que você esperava que acontecesse? / What did you expect to happen?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: "Comportamento observado / Actual behavior"
+      description: "O que realmente acontece? Inclua mensagens de erro completas. / What actually happens? Include full error messages."
+    validations:
+      required: true
+
+  - type: textarea
+    id: env
+    attributes:
+      label: "Ambiente / Environment"
+      description: "SO, versão do Node.js, navegador (se aplicável), runtime AWS, *commit hash* do repo. / OS, Node.js version, browser (if relevant), AWS runtime, repo commit hash."
+      placeholder: |
+        - SO / OS: Windows 11 / macOS 14.5 / Ubuntu 24.04
+        - Node: 24.x
+        - Commit: abc1234
+    validations:
+      required: false
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: "Logs, screenshots ou anexos / Logs, screenshots or attachments"
+      description: "Cole *stack traces* completos. Anexe *screenshots* arrastando arquivos para esta caixa. **Não inclua segredos, tokens ou ARNs com Account ID.** / Paste full stack traces. Drag files here for screenshots. **Do not include secrets, tokens or ARNs with Account IDs.**"
+      render: shell
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: "Confirmações / Confirmations"
+      options:
+        - label: "Procurei por issues abertas/fechadas com o mesmo problema. / I searched open/closed issues for the same problem."
+          required: true
+        - label: "Removi qualquer segredo, *token* ou Account ID dos logs colados. / I removed any secrets, tokens or AWS Account IDs from pasted logs."
+          required: true
+        - label: "Concordo em seguir o [Código de Conduta](https://github.com/fiscal-digital/.github/blob/main/CODE_OF_CONDUCT.md). / I agree to follow the Code of Conduct."
+          required: true

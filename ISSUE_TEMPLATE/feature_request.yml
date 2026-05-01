@@ -1,0 +1,96 @@
+name: "Feature request / Sugestão de feature"
+description: "Sugira uma nova feature, Fiscal, Skill ou fonte de dados. / Propose a new feature, Fiscal Agent, Skill or data source."
+title: "[Feature] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado pela sugestão. O Fiscal Digital é um projeto de escopo bem definido (fiscalização autônoma de gastos públicos municipais brasileiros) — sugestões alinhadas a essa missão têm prioridade.
+
+        Thanks for the suggestion. Fiscal Digital has a tightly scoped mission (autonomous oversight of Brazilian municipal spending) — proposals aligned with that mission take priority.
+
+        Antes de abrir, considere: a sugestão se encaixa em algum dos repos existentes ou propõe um novo? Existe um precedente no Querido Diário ou na Serenata de Amor que valha referenciar?
+
+  - type: dropdown
+    id: kind
+    attributes:
+      label: "Tipo de proposta / Proposal type"
+      options:
+        - "Novo Fiscal Agente / New Fiscal Agent (ex.: Fiscal de Convênios)"
+        - "Nova Skill compartilhada / New shared Skill"
+        - "Nova fonte de dados / New data source (ex.: TSE, TCE-RS)"
+        - "Nova cidade coberta / New covered city"
+        - "Melhoria em pipeline existente / Improvement to an existing pipeline"
+        - "Mudança no site / brand pack / Site or brand pack change"
+        - "Outro / Other"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: repo
+    attributes:
+      label: "Repositório alvo / Target repository"
+      options:
+        - "fiscal-digital (engine + Terraform)"
+        - "fiscal-digital-web (site + brand pack)"
+        - "fiscal-digital-collectors"
+        - "fiscal-digital-analytics"
+        - "Mais de um / Multiple"
+        - "Não sei ainda / Not sure yet"
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: "Problema que resolve / Problem this solves"
+      description: "Qual o problema concreto? Quem é afetado? / What concrete problem does this address? Who is affected?"
+      placeholder: "Ex.: hoje não detectamos contratos prorrogados por mais de N vezes consecutivas — padrão recorrente na gestão municipal..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: "Proposta / Proposal"
+      description: "Descreva a feature. Se for um Fiscal ou Skill nova, mencione *triggers* esperados. / Describe the feature. If it is a new Fiscal Agent or Skill, mention expected triggers."
+    validations:
+      required: true
+
+  - type: textarea
+    id: legal
+    attributes:
+      label: "Base legal (se aplicável) / Legal basis (if applicable)"
+      description: "Para Fiscais novos: lei e artigo que justificam a regra. / For new Fiscal Agents: law and article that justify the rule."
+      placeholder: "Lei 14.133/2021, Art. 125 (limite de 25% em aditivos)..."
+    validations:
+      required: false
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: "Alternativas consideradas / Alternatives considered"
+      description: "Pensou em outra forma de resolver? Existe algo no Querido Diário ou em outro projeto cívico que já cubra parcialmente? / Did you consider other approaches? Anything in Querido Diário or another civic project that partially covers it?"
+    validations:
+      required: false
+
+  - type: textarea
+    id: examples
+    attributes:
+      label: "Exemplos / Examples"
+      description: "Se possível, linke gazettes ou achados reais que ilustrem por que a feature é útil. / If possible, link real gazettes or findings that illustrate why this is useful."
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: "Confirmações / Confirmations"
+      options:
+        - label: "Procurei issues abertas/fechadas com proposta similar. / I searched for similar open/closed issues."
+          required: true
+        - label: "A proposta está alinhada com a missão do Fiscal Digital (fiscalização de gastos públicos municipais brasileiros). / The proposal aligns with the Fiscal Digital mission."
+          required: true
+        - label: "Concordo em seguir o [Código de Conduta](https://github.com/fiscal-digital/.github/blob/main/CODE_OF_CONDUCT.md). / I agree to follow the Code of Conduct."
+          required: true

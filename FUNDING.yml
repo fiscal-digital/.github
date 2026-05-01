@@ -1,0 +1,31 @@
+# Fiscal Digital — funding configuration
+#
+# Status: TODO — ativar quando a campanha do Catarse Recorrente
+# estiver no ar.
+#
+# Decisão de sequenciamento (memory: project_sequencing_engine_first.md
+# + project_funding_catarse.md):
+#
+#   - Captação oficial será via Catarse Recorrente, espelhando o modelo
+#     do Querido Diário (catarse.me/queridodiario-okbr).
+#   - Cadastro da campanha está BLOQUEADO até a engine estar rodando em
+#     produção e gerando alertas reais para Caxias do Sul.
+#   - Site fiscaldigital.org não terá checkout próprio — a página
+#     `/apoie` linkará para o Catarse externo. Essa página ainda não
+#     existe publicamente.
+#
+# Por isso, o botão "Sponsor" no GitHub permanece DESLIGADO neste
+# momento. Apontar agora para `custom: ['https://fiscaldigital.org/apoie']`
+# (página inexistente) ou para uma campanha Catarse não publicada
+# levaria visitantes a um link quebrado — o que é especialmente
+# danoso para um projeto cuja proposta de valor é credibilidade.
+#
+# Quando a campanha entrar no ar, descomentar a linha `custom:` abaixo
+# (ou substituir pela URL canônica da campanha no Catarse) e ajustar o
+# atalho na landing page.
+#
+# Referência:
+# https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/displaying-a-sponsor-button-in-your-repository
+
+# custom: ['https://fiscaldigital.org/apoie']
+# custom: ['https://www.catarse.me/fiscaldigital']
