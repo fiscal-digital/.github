@@ -1,0 +1,102 @@
+name: "Falso positivo / False positive — alerta incorreto"
+description: "Reporte um alerta publicado pelo Fiscal Digital que está incorreto. Esta issue ativa o processo de retratação pública. / Report a published alert that is incorrect. This issue triggers our public retraction process."
+title: "[Falso positivo] "
+labels: ["falso-positivo", "retratacao-pendente"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        > **Princípio inegociável do Fiscal Digital:** erro publicado = correção no mesmo canal e alcance da publicação original.
+        >
+        > **Non-negotiable principle:** a published error gets a correction in the same channel and reach as the original.
+
+        Obrigado por reportar. Sua issue ativa o processo de retratação. Levamos isso muito a sério — a credibilidade do projeto depende disso.
+
+        Thanks for flagging. Your issue activates the retraction process. We take this very seriously — the project's credibility depends on it.
+
+        Quanto mais factual e documentado o reporte, mais rápido conseguimos publicar a retratação.
+
+  - type: input
+    id: alert_url
+    attributes:
+      label: "URL do alerta publicado / Published alert URL"
+      description: "*Link* direto para o *post* no X, Reddit, ou outra plataforma onde o alerta foi publicado. / Direct link to the post on X, Reddit or wherever the alert was published."
+      placeholder: "https://x.com/LiFiscalDigital/status/..."
+    validations:
+      required: true
+
+  - type: input
+    id: gazette_url
+    attributes:
+      label: "URL da gazette original (Querido Diário) / Original gazette URL (Querido Diário)"
+      description: "*Link* para o diário oficial citado pelo alerta. / Link to the official gazette cited by the alert."
+      placeholder: "https://queridodiario.ok.org.br/..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: alert_text
+    attributes:
+      label: "Texto do alerta (cópia integral) / Full alert text"
+      description: "Cole o conteúdo completo do *post*. Caso a publicação tenha sido removida, transcreva o que estava lá. / Paste the full post content. If it has been deleted, transcribe what was there."
+    validations:
+      required: true
+
+  - type: textarea
+    id: gazette_excerpt
+    attributes:
+      label: "Trecho da gazette que demonstra a incorreção / Gazette excerpt that shows the error"
+      description: "Cole o texto da gazette (com nº de página se possível) que contradiz o alerta. / Paste the gazette text (with page number if possible) that contradicts the alert."
+      placeholder: "Página 17 do diário de DD/MM/YYYY: \"...\""
+    validations:
+      required: true
+
+  - type: textarea
+    id: explanation
+    attributes:
+      label: "Por que o alerta está incorreto? / Why is the alert wrong?"
+      description: "Explique o problema com clareza factual. Ex.: o aditivo foi de 18%, não 38%; o contrato é de outra entidade; a regra legal aplicada não cobre este caso. / Explain factually. E.g.: the amendment was 18%, not 38%; the contract belongs to another entity; the applied legal rule does not cover this case."
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: "Sugestão de correção / Suggested correction"
+      description: "Como o alerta retratado deveria descrever o caso? Texto preliminar é bem-vindo. / How should the corrected/retracted alert describe the case? Draft text is welcome."
+    validations:
+      required: false
+
+  - type: dropdown
+    id: relationship
+    attributes:
+      label: "Sua relação com o caso / Your relationship to the case"
+      description: "Apenas para contexto — não afeta o processo. / Context only — does not affect the process."
+      options:
+        - "Parte mencionada no alerta (fornecedor, agente público, etc.) / Party mentioned in the alert"
+        - "Representante legal / Legal representative"
+        - "Cidadão observador / Observer citizen"
+        - "Jornalista ou pesquisador / Journalist or researcher"
+        - "Membro do projeto / Project member"
+        - "Outro / Other"
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: retraction_consent
+    attributes:
+      label: "Retratação pública / Public retraction"
+      description: "A retratação será publicada nos mesmos canais e alcance do alerta original — é um princípio do projeto. Marcar ciência abaixo. / The retraction will be published in the same channels and reach as the original alert — it is a project principle. Please acknowledge."
+      options:
+        - label: "Compreendo que a retratação será pública e contém referência à minha issue. / I understand the retraction will be public and may reference this issue."
+          required: true
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: "Confirmações finais / Final confirmations"
+      options:
+        - label: "As URLs e o trecho da gazette acima são autênticos e verificáveis. / The URLs and gazette excerpt above are authentic and verifiable."
+          required: true
+        - label: "Concordo em seguir o [Código de Conduta](https://github.com/fiscal-digital/.github/blob/main/CODE_OF_CONDUCT.md). / I agree to follow the Code of Conduct."
+          required: true
