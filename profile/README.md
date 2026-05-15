@@ -52,6 +52,7 @@ Não competimos — estendemos. Todo achado linka para o Querido Diário. Sem el
 | [`fiscal-digital-web`](https://github.com/fiscal-digital/fiscal-digital-web) | Landing + dashboards por cidade (Next.js). **Owner do brand pack.** |
 | [`fiscal-digital-collectors`](https://github.com/fiscal-digital/fiscal-digital-collectors) | Adaptadores de fontes de dados |
 | [`fiscal-digital-analytics`](https://github.com/fiscal-digital/fiscal-digital-analytics) | Notebooks, relatórios e exports |
+| [`fiscal-digital-evaluations`](https://github.com/fiscal-digital/fiscal-digital-evaluations) | Avaliação pública dos Fiscais: golden set rotulado, ADRs por Fiscal, baselines de precisão |
 
 ## Onde nos encontrar
 
@@ -99,7 +100,7 @@ We don't compete. **We extend.** Every finding links back to Querido Diário. We
 
 ### Repositories · Status · Contributing
 
-The 4 public repos under this org are described in the Portuguese section above. Status: **under development** — public launch conditional on the fiscal pipeline generating real alerts for the first covered city.
+The 5 public repos under this org are described in the Portuguese section above. Status: **under development** — public launch conditional on the fiscal pipeline generating real alerts for the first covered city.
 
 To contribute, read [`CONTRIBUTING.md`](https://github.com/fiscal-digital/.github/blob/main/CONTRIBUTING.md). PRs that change Fiscal Agent logic require legal basis + a triggering example + a non-triggering example.
 
