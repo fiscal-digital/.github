@@ -8,7 +8,7 @@ Se você identificou uma vulnerabilidade em qualquer repositório `fiscal-digita
 
 **Canal preferido:** [GitHub Security Advisories](https://github.com/fiscal-digital/.github/security/advisories/new) (privado, integrado ao GitHub).
 
-**Canal alternativo (e-mail):** `security@fiscaldigital.org` *(em configuração — caso o e-mail não esteja ativo, prefira o canal acima).*
+**Canal alternativo (e-mail):** `lineu@fiscaldigital.org` (endereço canônico de contato do projeto).
 
 ### O que incluir
 
@@ -36,6 +36,7 @@ Cobrem-se todos os repositórios sob a *org* [`fiscal-digital`](https://github.c
 - `fiscal-digital-web`
 - `fiscal-digital-collectors`
 - `fiscal-digital-analytics`
+- `fiscal-digital-evaluations`
 - `.github` (este repo)
 
 E os recursos AWS de produção (`fiscal-digital-*-prod`).
@@ -69,7 +70,7 @@ If you identify a vulnerability in any `fiscal-digital-*` repository, **do not o
 
 **Preferred channel:** [GitHub Security Advisories](https://github.com/fiscal-digital/.github/security/advisories/new) (private, GitHub-native).
 
-**Alternative (email):** `security@fiscaldigital.org` *(under setup — please prefer the GitHub channel above).*
+**Alternative (email):** `lineu@fiscaldigital.org` (the project's canonical contact address).
 
 ### What to include
 
