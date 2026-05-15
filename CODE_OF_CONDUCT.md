@@ -46,7 +46,7 @@ Este Código de Conduta se aplica em todos os espaços da comunidade Fiscal Digi
 
 Comportamentos abusivos, de assédio ou inaceitáveis podem ser reportados às lideranças da comunidade pelo e-mail:
 
-**`conduta@fiscaldigital.org`** *(em configuração — caso o e-mail não esteja ativo, abra uma issue privada via [GitHub Security Advisories](https://github.com/fiscal-digital/.github/security/advisories/new))*
+**`lineu@fiscaldigital.org`** (endereço canônico de contato do projeto). Alternativamente, abra uma issue privada via [GitHub Security Advisories](https://github.com/fiscal-digital/.github/security/advisories/new).
 
 Todas as queixas serão revisadas e investigadas de forma rápida e justa. Toda liderança da comunidade tem a obrigação de respeitar a privacidade e a segurança de quem reportou um incidente.
 
@@ -76,4 +76,4 @@ Para respostas a perguntas frequentes sobre este código de conduta, veja <https
 
 We follow the [Contributor Covenant 2.1](https://www.contributor-covenant.org/version/2/1/code_of_conduct/) in full. The Portuguese text above is the canonical translation we use for community enforcement; the English original at the link above is normative in case of any divergence.
 
-Reports may be sent to **`conduta@fiscaldigital.org`** *(under setup — if the address is not yet active, please file a private report via [GitHub Security Advisories](https://github.com/fiscal-digital/.github/security/advisories/new))*. All reports will be reviewed promptly and confidentially.
+Reports may be sent to **`lineu@fiscaldigital.org`** (the project's canonical contact address). Alternatively, file a private report via [GitHub Security Advisories](https://github.com/fiscal-digital/.github/security/advisories/new). All reports will be reviewed promptly and confidentially.
