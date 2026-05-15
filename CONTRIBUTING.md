@@ -26,6 +26,7 @@ Cada repo tem o seu `README.md` com instruções de *setup* local:
 - [`fiscal-digital-web`](https://github.com/fiscal-digital/fiscal-digital-web) — site, **owner do brand pack**
 - [`fiscal-digital-collectors`](https://github.com/fiscal-digital/fiscal-digital-collectors) — adaptadores de fontes
 - [`fiscal-digital-analytics`](https://github.com/fiscal-digital/fiscal-digital-analytics) — notebooks e exports
+- [`fiscal-digital-evaluations`](https://github.com/fiscal-digital/fiscal-digital-evaluations) — golden set rotulado e ADRs por Fiscal
 
 Stack comum: TypeScript *strict*, Node.js 24.x, AWS *serverless*. Detalhes por repo.
 

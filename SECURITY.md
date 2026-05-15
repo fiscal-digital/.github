@@ -36,6 +36,7 @@ Cobrem-se todos os repositórios sob a *org* [`fiscal-digital`](https://github.c
 - `fiscal-digital-web`
 - `fiscal-digital-collectors`
 - `fiscal-digital-analytics`
+- `fiscal-digital-evaluations`
 - `.github` (este repo)
 
 E os recursos AWS de produção (`fiscal-digital-*-prod`).
